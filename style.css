@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Work Sans', sans-serif;
 }
@@ -59,9 +62,16 @@ nav ul li{
 nav ul li a {
     display: inline-block;
     text-decoration: none;
-    padding: 15px 19px;
+    padding: 0px 22px;
     color: #fff;
     font-size: 20px;
+    line-height: 73px;
+}
+.one{
+    color: #c69453;
+}
+nav ul li:hover>a{
+    color: #c69453;
 }
 nav ul li a::after{
     content: "";
@@ -69,16 +79,23 @@ nav ul li a::after{
     background-color: rgb(255, 255, 255);
     width: 0%;
     display: block;
-    transition: .7s;
+    transition: .6s;
     position: absolute;
-    top: 100%;
-    left: 13px;
+    top: 95%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+
+
 }
 nav ul li a:hover::after{
-    width: 79%;
+    width: 80%;
+
 }
+
 nav ul li ul {
     width: 300px;
+    z-index: 50;
     position: absolute;
     top: 105%;
     left: -69px;
@@ -102,7 +119,7 @@ nav ul li ul li a{
     
 }
 nav ul li ul li a:hover{
-    background-color:#acacac;
+    background-color:#dadada;
 }
 nav ul li:hover ul{
     opacity: 1;
@@ -155,9 +172,8 @@ nav ul li:hover ul{
     font-weight: 600;
     color: rgb(255, 255, 255);
     border: 2px solid transparent;
-    line-height: 45px;
+    line-height: 130px;
     transition: all .4s;
-    border: 2px solid #c69453;
 }
 .banner_text a:hover{
     background-color: rgb(255, 255, 255);
@@ -175,19 +191,24 @@ nav ul li:hover ul{
     margin: 15px;
     box-shadow: 1px 1px 40px 11px #dad8d7;
     transition: all .3s;
-    padding: 20px 0px;
-    transform: rotateX(0deg)
+    padding: 20px 0px 70px 0px;
+    transform: rotateX(0deg);
 }
-.box a{
+.box p {
+    margin: 15px 0px 25px 0px;
+}
+.box a {
     padding: 10px 15px;
     font-size: 16px;
     background-color: peru;
     font-weight: 600;
     color: #fff;
-    line-height: 30px;
     transition: .3s;
     border-radius: 10px;
     text-decoration: none;
+    display: inline-block;
+    transform: translateY(0px);
+
 }
 .box img{
     transform: rotateY(0deg) !important;
@@ -198,9 +219,10 @@ nav ul li:hover ul{
     transform: rotateY(360deg) !important;
 
 }
-.box a:hover{
+.box a:hover {
     background-color: rgb(0, 0, 0) !important;
     color: #fff !important;
+    transform: translateY(20px);
 }
 .box:hover{
     background-color: #dad8d7;
