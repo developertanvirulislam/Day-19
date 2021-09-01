@@ -8,7 +8,7 @@ body{
 .container{
     width: 1200px !important;
     margin: auto !important;
-/*     overflow-x: hidden !important; */
+    overflow-x: hidden !important;
 }
 .clear::after{
     content: "";
@@ -130,15 +130,10 @@ nav ul li:hover ul{
 
 /* >>>>>>>>>>>>>>>>>>banner>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .banner_text h1 {
-	font-size: 95px;
-	font-weight: 700;
-	color: #fff;
-	/* line-height: 40px; */
-	text-align: left;
-	/* margin-left: 25px; */
-	position: relative;
-	left: -55px;
-	top: -13px;
+    font-size: 95px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 40px;
 }
 .banner_text{
     text-align: center;
@@ -255,7 +250,7 @@ nav ul li:hover ul{
     /* display: inline-block; */
     width: 52%;
     float: right;
-    margin-top: 0px;
+    margin-top: -27px;
 }
 .video_text span {
     color: #ad8047;
@@ -282,7 +277,7 @@ summary {
 .quick {
     background: url(https://i.ibb.co/J5V02GZ/ia-200000022.jpg) no-repeat center right;
     background-size: cover;
-    padding: 80px 0px;
+    padding: 64px 0px;
 }
 .form{ 
     width: 50%;
@@ -320,8 +315,8 @@ footer {
     padding: 8px 0px;
 }
 footer p {
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 22px;
+    font-weight: 400;
     display: inline-block;
     margin: 0px 34px;
     color: #fff;
