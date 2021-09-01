@@ -5,6 +5,7 @@ body{
 .container{
     width: 1200px !important;
     margin: auto !important;
+    overflow-x: hidden !important;
 }
 .clear::after{
     content: "";
@@ -125,6 +126,25 @@ nav ul li:hover ul{
     color: #fff;
     line-height: 10px;
     font-weight: 600;
+    position: relative;
+}
+.banner_text h3::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 325px;
+    height: 3px;
+    width: 100px;
+    background-color: #fff;
+}
+.banner_text h3::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 325px;
+    height: 3px;
+    width: 100px;
+    background-color: #fff;
 }
 .banner_text a {
     text-decoration: none;
@@ -232,17 +252,10 @@ summary {
 
 /* >>>>>>>>>>>>>>>>>>>>>Quit>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-/* .quick_img{
-    float: right;
-    width: 40%;
-}
-.quick_img img{
-    max-width: 100%;
-} */
 .quick {
     background: url(https://i.ibb.co/J5V02GZ/ia-200000022.jpg) no-repeat center right;
     background-size: cover;
-    padding: 160px 0px;
+    padding: 20px 0px;
 }
 .form{ 
     width: 50%;
