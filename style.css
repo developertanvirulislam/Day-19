@@ -8,7 +8,7 @@ body{
 .container{
     width: 1200px !important;
     margin: auto !important;
-    overflow-x: hidden !important;
+/*     overflow-x: hidden !important; */
 }
 .clear::after{
     content: "";
